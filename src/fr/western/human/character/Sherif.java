@@ -1,8 +1,7 @@
 package fr.western.human.character;
 
-import fr.western.human.Human;
 
-public class Sherif extends Human {
+public class Sherif extends Cowboy {
     private int arrestedBrigand;
 
     // CONSTRUCTOR
@@ -23,6 +22,4 @@ public class Sherif extends Human {
         this.arrestedBrigand += 1;
         return this.talk("From the name of the low, I arrested you " + brigand.getName() + " !");
     }
-
-
 }

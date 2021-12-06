@@ -11,7 +11,7 @@ public class Story {
         Lady marianne = new Lady("Marianne");
         Brigand dalton = new Brigand("Joe Dalton", "Pepsi");
         Bartender boris = new Bartender("Boris", "At word's end");
-        Sherif leon = new Sherif("Leon");
+        Cowboy leon = new Sherif("Leon");
 
         System.out.println(boris.introduce());
         System.out.println(boris.serveFavoriteDrink(lukyLuke));
