@@ -12,7 +12,12 @@ public class Story {
         Brigand dalton = new Brigand("Joe Dalton", "Pepsi");
         Bartender boris = new Bartender("Boris", "At word's end");
         Cowboy leon = new Sherif("Leon");
+        Rotten dumb = new Rotten("Dumb");
 
+        System.out.println(dumb.introduce());
+        System.out.println(dumb.getCapturedLadiesCount());
+        System.out.println(dumb.kidnap(marianne));
+        System.out.println(dumb.getCapturedLadiesCount());
         System.out.println(boris.introduce());
         System.out.println(boris.serveFavoriteDrink(lukyLuke));
         System.out.println(lukyLuke.introduce());
