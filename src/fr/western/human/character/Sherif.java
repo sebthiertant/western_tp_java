@@ -18,8 +18,8 @@ public class Sherif extends Cowboy {
         return this.talk("Oy Oy dear people ! " + brigand.getWantedReward() + "$ to anyone who capture " + brigand.getName() + ".");
     }
 
-    public String arrestBrigand(Brigand brigand){
+    public String arrestBrigand(Outlaw outlaw){
         this.arrestedBrigand += 1;
-        return this.talk("From the name of the low, I arrested you " + brigand.getName() + " !");
+        return this.talk("From the name of the low, I arrested you " + outlaw.getName() + " !");
     }
 }

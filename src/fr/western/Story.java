@@ -25,7 +25,5 @@ public class Story {
         System.out.println(dalton.getCatch(lukyLuke));
         System.out.println(lukyLuke.freeLady(marianne));
         System.out.println(marianne.thankFull(lukyLuke));
-
-
     }
 }
