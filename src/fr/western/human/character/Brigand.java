@@ -2,7 +2,7 @@ package fr.western.human.character;
 
 import fr.western.human.Human;
 
-public class Brigand extends Human {
+public class Brigand extends Human implements Outlaw{
 
     private String look;
     private int capturedLadiesCount;
