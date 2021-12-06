@@ -1,7 +1,7 @@
 package fr.western.human.character;
 
 
-public class Sherif extends Cowboy {
+public class Sherif extends Cowboy implements PaleFace {
     private int arrestedBrigand;
 
     // CONSTRUCTOR
@@ -21,5 +21,9 @@ public class Sherif extends Cowboy {
     public String arrestBrigand(Outlaw outlaw){
         this.arrestedBrigand += 1;
         return this.talk("From the name of the low, I arrested you " + outlaw.getName() + " !");
+    }
+
+    public String scalped(){
+        return this.talk("No, my head !!");
     }
 }

@@ -1,6 +1,6 @@
 package fr.western.human.character;
 
-public class Rotten extends Sherif implements Outlaw{
+public class Rotten extends Sherif implements Outlaw, PaleFace{
 
     private float wantedReward;
     private int capturedLadiesCount;
@@ -47,10 +47,16 @@ public class Rotten extends Sherif implements Outlaw{
         System.out.println(lady.yell());
         return this.talk("AHAH ! I catched you " + lady.getName() + " you're mine.");
     }
+
     @Override
     public String getCatch(Cowboy cowboy){
         setIsInJail(true);
         return this.talk("Damn you " + cowboy.getName());
     }
+
+    public String scalped(){
+        return this.talk("No, my head !!");
+    }
+
 
 }

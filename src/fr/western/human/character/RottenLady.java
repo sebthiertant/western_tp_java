@@ -1,6 +1,6 @@
 package fr.western.human.character;
 
-public class RottenLady extends Lady implements Outlaw{
+public class RottenLady extends Lady implements Outlaw, PaleFace{
 
     private boolean isCaptive;
     private String dressColor;
@@ -72,5 +72,9 @@ public class RottenLady extends Lady implements Outlaw{
     public String getCatch(Cowboy cowboy){
         setIsInJail(true);
         return this.talk("Damn you " + cowboy.getName());
+    }
+
+    public String scalped(){
+        return this.talk("No, my head !!");
     }
 }

@@ -2,7 +2,7 @@ package fr.western.human.character;
 
 import fr.western.human.Human;
 
-public class Lady extends Human {
+public class Lady extends Human implements PaleFace{
 
     private boolean isCaptive;
     private String dressColor;
@@ -57,4 +57,9 @@ public class Lady extends Human {
     public String introduce(){
         return this.talk("Miss " + this.getName() + ".") ;
     }
+
+    public String scalped(){
+        return this.talk("No, my head !!");
+    }
+
 }

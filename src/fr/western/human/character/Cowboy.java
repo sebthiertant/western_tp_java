@@ -2,7 +2,7 @@ package fr.western.human.character;
 
 import fr.western.human.Human;
 
-public class Cowboy extends Human {
+public class Cowboy extends Human implements PaleFace {
 
     private int popularity;
     private String adjective;
@@ -50,6 +50,10 @@ public class Cowboy extends Human {
 
     public String introduce(){
         return this.talk(this.getName()) ;
+    }
+
+    public String scalped(){
+        return this.talk("No, my head !!");
     }
 
 }

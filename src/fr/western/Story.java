@@ -14,7 +14,7 @@ public class Story {
         Cowboy leon = new Sherif("Leon");
         Rotten dumb = new Rotten("Dumb");
         RottenLady calamityJane = new RottenLady("Calamity Jane");
-
+        Indian charles = new Indian("Charles");
 
         System.out.println(dumb.introduce());
         System.out.println(dumb.kidnap(marianne));
@@ -30,5 +30,9 @@ public class Story {
         System.out.println(dalton.getCatch(lukyLuke));
         System.out.println(lukyLuke.freeLady(marianne));
         System.out.println(marianne.thankFull(lukyLuke));
+
+        System.out.println(calamityJane.introduce());
+        System.out.println(charles.scalp(marianne));
+
     }
 }

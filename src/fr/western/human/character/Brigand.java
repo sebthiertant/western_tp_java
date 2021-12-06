@@ -2,7 +2,7 @@ package fr.western.human.character;
 
 import fr.western.human.Human;
 
-public class Brigand extends Human implements Outlaw{
+public class Brigand extends Human implements Outlaw, PaleFace{
 
     private String look;
     private int capturedLadiesCount;
@@ -81,6 +81,10 @@ public class Brigand extends Human implements Outlaw{
         return (this.talk("I'm " + this.getName() + " the " + this.getLook() +".\n") +
         this.talk(" I'm looking " + this.getLook() + " and I already kidnapped " + this.capturedLadiesCount + " ladies.\n")
         + (this.talk("My head is rewarded for " + this.wantedReward + "$")));
+    }
+
+    public String scalped(){
+        return this.talk("No, my head !!");
     }
 
 }
