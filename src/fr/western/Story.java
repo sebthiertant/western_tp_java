@@ -13,11 +13,11 @@ public class Story {
         Bartender boris = new Bartender("Boris", "At word's end");
         Cowboy leon = new Sherif("Leon");
         Rotten dumb = new Rotten("Dumb");
+        RottenLady calamityJane = new RottenLady("Calamity Jane");
+
 
         System.out.println(dumb.introduce());
-        System.out.println(dumb.getCapturedLadiesCount());
         System.out.println(dumb.kidnap(marianne));
-        System.out.println(dumb.getCapturedLadiesCount());
         System.out.println(boris.introduce());
         System.out.println(boris.serveFavoriteDrink(lukyLuke));
         System.out.println(lukyLuke.introduce());
